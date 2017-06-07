@@ -3,9 +3,9 @@
 ## Installation
 
 ```sh
-git clone git@github.com:suttang/react-basic.git
-cd react-basic
-yarn install
+git clone git@github.com:suttang/react-basic-redux.git
+cd react-basic-redux
+yarn
 ```
 
 ## Build
