@@ -8,8 +8,14 @@ cd react-basic-redux
 yarn
 ```
 
+## Debug build and serve
+
+```sh
+yarn serve
+```
+
 ## Build
 
 ```sh
-yarn run build
+yarn build
 ```
