@@ -1,0 +1,33 @@
+{
+  "name": "react-basic-redux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:suttang/react-basic-redux.git",
+  "author": "suttang <suttang@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --colors --config ./webpack.config.dev.js",
+    "serve": "node public/server.js"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.27",
+    "@types/react-dom": "^15.5.0",
+    "@types/webpack-env": "^1.13.0",
+    "@types/node": "^7.0.27",
+    "css-loader": "^0.28.4",
+    "minimist": "^1.2.0",
+    "node-sass": "^4.5.3",
+    "react-hot-loader": "next",
+    "style-loader": "^0.18.2",
+    "ts-loader": "^2.1.0",
+    "tslint": "^5.4.2",
+    "typescript": "^2.3.4",
+    "typings-for-css-modules-loader": "^1.5.0",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
