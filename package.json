@@ -10,14 +10,17 @@
     "serve": "node public/server.js"
   },
   "devDependencies": {
+    "@types/node": "^7.0.27",
     "@types/react": "^15.0.27",
     "@types/react-dom": "^15.5.0",
+    "@types/react-redux": "^4.4.42",
     "@types/webpack-env": "^1.13.0",
-    "@types/node": "^7.0.27",
     "css-loader": "^0.28.4",
     "minimist": "^1.2.0",
     "node-sass": "^4.5.3",
     "react-hot-loader": "next",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
     "style-loader": "^0.18.2",
     "ts-loader": "^2.1.0",
     "tslint": "^5.4.2",
