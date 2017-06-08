@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Count from './Count';
-import Button from './Button';
+import Count from './count';
+import Button from './button';
 // import { CounterState } from '../module';
 // import { ActionDispatcher } from '../container';
 
