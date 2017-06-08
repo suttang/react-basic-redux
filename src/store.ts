@@ -1,20 +1,24 @@
-import { applyMiddleware, combineReducers, compose, createStore, Action } from 'redux';
-import { reducer as counter, CounterState, CounterActions } from './counter/module';
-
-export interface ReduxState {
-  counter: CounterState;
-}
-
-export type ReduxAction = CounterActions | Action;
+import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
+import { rootReducer } from './modules';
 
 export default function configureStore() {
   const reducers = combineReducers({
-    counter,
+    ...rootReducer,
   });
   const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   const store = createStore(reducers, composeEnhancers(applyMiddleware(
 
   )));
+
+  if (module.hot) {
+    module.hot.accept('./modules', () => {
+      const newRootReducer = require('./modules').rootReducer;
+      console.log(newRootReducer);
+      store.replaceReducer(combineReducers({
+        ...newRootReducer,
+      }));
+    });
+  }
 
   return store;
 }

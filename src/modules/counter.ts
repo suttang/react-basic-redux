@@ -1,7 +1,7 @@
 import { Action } from 'redux';
 
-const INCREMENT_COUNT = 'react-basic-redux/counter/INCREMENT';
-const DECREMENT_COUNT = 'react-basic-redux/counter/DECREMENT';
+const INCREMENT_COUNT = 'counter/INCREMENT';
+const DECREMENT_COUNT = 'counter/DECREMENT';
 
 type INCREMENT_COUNT_TYPE = typeof INCREMENT_COUNT;
 type DECREMENT_COUNT_TYPE = typeof DECREMENT_COUNT;
