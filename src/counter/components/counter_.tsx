@@ -1,12 +1,8 @@
 import * as React from 'react';
 import Count from './count';
 import Button from './button';
-// import { CounterState } from '../module';
-// import { ActionDispatcher } from '../container';
 
 interface Props {
-  // value: CounterState;
-  // actions: ActionDispatcher;
   count: number;
   decrement: (value: number) => void;
   increment: (value: number) => void;
