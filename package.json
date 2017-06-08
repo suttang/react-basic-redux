@@ -13,7 +13,7 @@
     "@types/node": "^7.0.27",
     "@types/react": "^15.0.27",
     "@types/react-dom": "^15.5.0",
-    "@types/react-redux": "^4.4.42",
+    "@types/react-redux": "4.4.40",
     "@types/webpack-env": "^1.13.0",
     "css-loader": "^0.28.4",
     "minimist": "^1.2.0",
