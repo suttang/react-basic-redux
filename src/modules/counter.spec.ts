@@ -4,6 +4,7 @@ function setUp() {
   const initialState: CounterState = {
     count: 0,
   };
+
   return {
     initialState,
   };
@@ -17,11 +18,13 @@ describe('counter reducer', () => {
 
   it('should handle incrementCount', () => {
     const { initialState } = setUp();
-    expect(reducer(initialState, incrementCount(10))).toEqual({ count: 10 });
+    const amount = 10;
+    expect(reducer(initialState, incrementCount(amount))).toEqual({ count: initialState.count + amount });
   });
 
   it('should handle incrementCount', () => {
     const { initialState } = setUp();
-    expect(reducer(initialState, decrementCount(10))).toEqual({ count: -10 });
+    const amount = 10;
+    expect(reducer(initialState, decrementCount(amount))).toEqual({ count: initialState.count - amount });
   });
 });
