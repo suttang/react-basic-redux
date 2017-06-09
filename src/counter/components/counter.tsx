@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Count from './count';
-import Button from './button';
+import Button from './Button';
 
 interface Props {
   count: number;

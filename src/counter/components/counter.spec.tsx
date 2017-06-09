@@ -4,7 +4,7 @@ import * as sinon from 'sinon';
 import { shallow } from 'enzyme';
 import Counter from './counter';
 import Count from './count';
-import Button from './button';
+import Button from './Button';
 
 describe('Counter', () => {
   it('should be display count', () => {

@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as assert from 'power-assert';
 import * as sinon from 'sinon';
 import { shallow } from 'enzyme';
-import Button from './button';
+import Button from './Button';
 
 describe('Button', () => {
   it('should contains label text', () => {

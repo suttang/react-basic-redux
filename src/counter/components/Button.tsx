@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from './button.scss';
+import * as styles from './Button.scss';
 
 interface Props {
   label: string;
