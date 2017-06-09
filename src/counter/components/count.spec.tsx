@@ -5,8 +5,8 @@ import Count from './count';
 
 describe('Count', () => {
   it('should be display prop count', () => {
-    const amount: number = 12357;
-    const component = shallow(<Count count={amount} />);
-    assert(component.text() === `Count: ${amount}`);
+    const count: number = 12357;
+    const component = shallow(<Count count={count} />);
+    assert(component.text() === `Count: ${count}`);
   });
 });
