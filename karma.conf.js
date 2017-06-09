@@ -18,6 +18,8 @@ module.exports = (config) => {
       'text/x-typescript': ['ts','tsx']
     },
 
+    reporters: ['mocha'],
+
     webpack: {
       resolve: {
         extensions: ['.ts', '.js', ".tsx"]
@@ -57,8 +59,7 @@ module.exports = (config) => {
     },
     client: {
       mocha: {
-        // reporter: 'spec',
-        reporter: 'progress',
+        reporter: 'spec',
         ui: 'bdd'
       }
     },
