@@ -13,7 +13,7 @@ export default function configureStore() {
   if (module.hot) {
     module.hot.accept('./modules', () => {
       const newRootReducer = require('./modules').rootReducer;
-      console.log(newRootReducer);
+
       store.replaceReducer(combineReducers({
         ...newRootReducer,
       }));
