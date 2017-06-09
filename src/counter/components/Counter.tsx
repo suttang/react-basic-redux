@@ -11,8 +11,8 @@ interface Props {
 class Counter extends React.Component<Props, {}> {
   public render() {
     const { count, increment, decrement } = this.props;
-    const incrementAction = (count: number): void => increment(count);
-    const decrementAction = (count: number): void => decrement(count);
+    const incrementAction = () => increment(1);
+    const decrementAction = () => decrement(1);
 
     return (
       <div>

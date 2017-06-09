@@ -12,12 +12,6 @@ function setUp() {
 }
 
 describe('counter reducer', () => {
-  it('should return the initial state', () => {
-    const { initialState } = setUp();
-    const state: CounterState = reducer(undefined, null);
-    assert.deepEqual(state, initialState);
-  });
-
   it('should handle incrementCount', () => {
     const { initialState } = setUp();
     const count = 10;
