@@ -44,6 +44,11 @@ module.exports = (config) => {
             ]
           }
         ]
+      },
+      externals: {
+        'react/addons': true,
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true
       }
     },
     webpackMiddleware: {
