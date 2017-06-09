@@ -34,6 +34,7 @@
         "typeLiterals": "ignore"
       },
       "singleline": "never"
-    }]
+    }],
+    "promise-function-async": true
   }
 }

@@ -8,7 +8,8 @@
   "scripts": {
     "build": "webpack --colors --config ./webpack.config.dev.js",
     "serve": "node public/server.js",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "tslint": "tslint -c tslint.json -p . src/**/*.{ts,tsx}"
   },
   "devDependencies": {
     "@types/enzyme": "^2.8.0",
