@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Count from './count';
+import Count from './Count';
 import Button from './Button';
 
 interface Props {

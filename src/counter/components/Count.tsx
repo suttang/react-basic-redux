@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from './count.scss';
+import * as styles from './Count.scss';
 
 interface Props {
   count: number;

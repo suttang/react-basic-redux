@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as assert from 'power-assert';
 import { shallow } from 'enzyme';
-import Count from './count';
+import Count from './Count';
 
 describe('Count', () => {
   it('should be display prop count', () => {
