@@ -13,6 +13,7 @@
   "devDependencies": {
     "@types/mocha": "^2.2.41",
     "@types/node": "^7.0.27",
+    "@types/power-assert": "^1.4.29",
     "@types/react": "^15.0.27",
     "@types/react-dom": "^15.5.0",
     "@types/react-redux": "4.4.40",
@@ -25,6 +26,7 @@
     "minimist": "^1.2.0",
     "mocha": "^3.4.2",
     "node-sass": "^4.5.3",
+    "power-assert": "^1.4.3",
     "react-hot-loader": "next",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
@@ -34,7 +36,8 @@
     "typescript": "^2.3.4",
     "typings-for-css-modules-loader": "^1.5.0",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "webpack-espower-loader": "^1.0.2"
   },
   "dependencies": {
     "react": "^15.5.4",

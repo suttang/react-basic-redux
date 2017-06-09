@@ -23,7 +23,14 @@ module.exports = (config) => {
         extensions: ['.ts', '.js', ".tsx"]
       },
       module: {
+        exprContextCritical: false,
         rules: [
+          {
+            test: /\.spec\.tsx?$/,
+            use: [
+              {loader: "webpack-espower-loader"}
+            ]
+          },
           {
             test: /\.tsx?$/,
             use: [
