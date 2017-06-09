@@ -7,7 +7,8 @@ import Button from './Button';
 describe('Button', () => {
   it('should contains label text', () => {
     const label: string = 'LABEL_TEXT';
-    const component = shallow(<Button label={label} onClick={() => { alert('ALERT_TEXT'); }} />);
+    const click = () => {};
+    const component = shallow(<Button label={label} onClick={click} />);
     assert(component.text() === label);
   });
 

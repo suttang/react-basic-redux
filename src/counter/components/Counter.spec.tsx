@@ -2,8 +2,8 @@ import * as React from 'react';
 import * as assert from 'power-assert';
 import * as sinon from 'sinon';
 import { shallow } from 'enzyme';
-import Counter from './counter';
-import Count from './count';
+import Counter from './Counter';
+import Count from './Count';
 import Button from './Button';
 
 describe('Counter', () => {
@@ -11,7 +11,9 @@ describe('Counter', () => {
     const count: number = 135;
     const increment = () => {};
     const decrement = () => {};
-    const component = shallow(<Counter count={count} increment={increment} decrement={decrement} />);
+    const component = shallow(
+      <Counter count={count} increment={increment} decrement={decrement} />,
+    );
     assert(component.find(Count).prop('count') === count);
   });
 
@@ -19,7 +21,9 @@ describe('Counter', () => {
     const count: number = 135;
     const increment = sinon.spy();
     const decrement = sinon.spy();
-    const component = shallow(<Counter count={count} increment={increment} decrement={decrement} />);
+    const component = shallow(
+      <Counter count={count} increment={increment} decrement={decrement} />,
+    );
     component.find(Button).filterWhere(n => n.prop('label') === 'increment').simulate('click');
     component.find(Button).filterWhere(n => n.prop('label') === 'decrement').simulate('click');
     assert(increment.called);

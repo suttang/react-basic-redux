@@ -1,7 +1,7 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import { rootReducer } from './modules';
 
-export default function configureStore() {
+export const configureStore = () => {
   const reducers = combineReducers({
     ...rootReducer,
   });
@@ -21,4 +21,4 @@ export default function configureStore() {
   }
 
   return store;
-}
+};
