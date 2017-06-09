@@ -1,25 +1,16 @@
 module.exports = (config) => {
   config.set({
-
     basePath: '',
-
     frameworks: ['mocha'],
-
     files: [
       { pattern: 'src/**/*.spec.ts' },
       { pattern: 'src/**/*.spec.tsx' }
     ],
-
     preprocessors: {
       'src/**/*.spec.ts': ['webpack'],
       'src/**/*.spec.tsx': ['webpack']
     },
-    mime: {
-      'text/x-typescript': ['ts','tsx']
-    },
-
     reporters: ['mocha'],
-
     webpack: {
       resolve: {
         extensions: ['.ts', '.js', ".tsx"]
@@ -30,13 +21,13 @@ module.exports = (config) => {
           {
             test: /\.spec\.tsx?$/,
             use: [
-              {loader: "webpack-espower-loader"}
+              { loader: "webpack-espower-loader" }
             ]
           },
           {
             test: /\.tsx?$/,
             use: [
-              {loader: "ts-loader"}
+              { loader: "ts-loader" }
             ]
           },
           {
@@ -65,9 +56,7 @@ module.exports = (config) => {
     },
     colors: true,
     logLevel: config.LOG_INFO,
-    // autoWatch: false,
     browsers: ['Chrome'],
-    // singleRun: true,
     concurrency: Infinity,
     failOnEmptyTestSuite: false
   })
