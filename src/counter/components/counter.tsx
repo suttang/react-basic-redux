@@ -10,11 +10,15 @@ interface Props {
 
 class Counter extends React.Component<Props, {}> {
   public render() {
+    const { count, increment, decrement } = this.props;
+    const incrementAction = (count: number): void => increment(count);
+    const decrementAction = (count: number): void => decrement(count);
+
     return (
       <div>
-        <Count count={this.props.count} />
-        <Button label="increment" onClick={() => this.props.increment(1)}></Button>
-        <Button label="decrement" onClick={() => this.props.decrement(1)}></Button>
+        <Count count={count} />
+        <Button label="increment" onClick={incrementAction} />
+        <Button label="decrement" onClick={decrementAction} />
       </div>
     );
   }

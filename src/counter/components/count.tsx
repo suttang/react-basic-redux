@@ -5,7 +5,7 @@ interface Props {
   count: number;
 }
 
-const Count: React.StatelessComponent<Props> = (props: Props) => (
+const Count: React.SFC<Props> = (props: Props) => (
   <p className={styles.counter}>
     Count: <span className={styles.count}>{props.count}</span>
   </p>
