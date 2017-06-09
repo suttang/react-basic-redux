@@ -8,22 +8,22 @@ type DECREMENT_COUNT_TYPE = typeof DECREMENT_COUNT;
 
 interface IncrementAction extends Action {
   type: INCREMENT_COUNT_TYPE;
-  value: number;
+  count: number;
 }
 
 interface DecrementAction extends Action {
   type: DECREMENT_COUNT_TYPE;
-  value: number;
+  count: number;
 }
 
 export const incrementCount = (value: number): IncrementAction => ({
   type: INCREMENT_COUNT,
-  value,
+  count: value,
 });
 
 export const decrementCount = (value: number): DecrementAction => ({
   type: DECREMENT_COUNT,
-  value,
+  count: value,
 });
 
 export interface CounterState {
@@ -39,9 +39,9 @@ const initialState: CounterState = {
 export function reducer(state: CounterState = initialState, action: CounterActions): CounterState {
   switch (action.type) {
     case INCREMENT_COUNT:
-      return { count: state.count + action.value };
+      return { count: state.count + action.count };
     case DECREMENT_COUNT:
-      return { count: state.count - action.value };
+      return { count: state.count - action.count };
     default:
       return state;
   }

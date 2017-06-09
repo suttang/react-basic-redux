@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const WebpackDevServer = require('webpack-dev-server')
-const config = require('webpack.config.dev')
+const config = require('webpack.config')
 const argv = require('minimist')(process.argv.slice(2))
 
 const host = argv.host || '0.0.0.0'

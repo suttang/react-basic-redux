@@ -12,4 +12,9 @@ const mapDispatchToProps = {
   increment: incrementCount,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+const CounterContainer: React.ComponentClass<{}> = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Counter);
+
+export { CounterContainer as Counter };
