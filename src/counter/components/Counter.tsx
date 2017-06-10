@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Count from './Count';
 import Button from './Button';
+import * as styles from './Counter.scss';
 
 interface Props {
   count: number;
@@ -15,7 +16,7 @@ class Counter extends React.Component<Props, {}> {
     const decrementAction = () => decrement(1);
 
     return (
-      <div>
+      <div className={styles.container}>
         <Count count={count} />
         <Button label="increment" onClick={incrementAction} />
         <Button label="decrement" onClick={decrementAction} />
