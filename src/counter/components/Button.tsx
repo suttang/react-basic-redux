@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as styles from './Button.scss';
 
-interface Props {
+interface Props extends React.Props<{}> {
   label: string;
   onClick: () => void;
 }
